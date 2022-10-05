@@ -1,0 +1,12 @@
+# duk's skhd keybinds and launchers
+
+# App Launchers{{{
+
+cmd + shift - return : open -na "kitty.app"
+cmd + shift - a : open -na "Arc.app"
+cmd + shift - d : open -na "Discord Canary.app"
+
+
+#}}}
+
+# Workspaces (soon)
