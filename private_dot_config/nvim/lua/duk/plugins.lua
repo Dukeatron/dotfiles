@@ -1,3 +1,5 @@
+-- Auto-Install Everything on new machine
+
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -27,19 +29,6 @@ return require('packer').startup(function(use)
 	use 'feline-nvim/feline.nvim' -- status bar
 	use 'andweeb/presence.nvim' -- rich presence
 	use 'onsails/lspkind.nvim' -- lsp icons
-
-	use({
-	  "folke/noice.nvim",
-	  event = "VimEnter",
-	  config = function()
-		require("noice").setup()
-	  end,
-	  requires = {
-		"MunifTanjim/nui.nvim",
-		"rcarriga/nvim-notify",
-		"hrsh7th/nvim-cmp",
-	  }
-	}) -- UI Fixes, testing it rn
 
 	use 'dstein64/vim-startuptime' -- metrics
 
