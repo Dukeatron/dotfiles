@@ -32,6 +32,21 @@ return require('packer').startup(function(use)
 
 	use 'dstein64/vim-startuptime' -- metrics
 
+	use {
+	  'phaazon/mind.nvim',
+	  branch = 'v2.2',
+	  requires = { 'nvim-lua/plenary.nvim' },
+	  config = function()
+		require'mind'.setup()
+	  end
+	} -- funny productivity thing
+
+	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons'} --bufferline
+
+	use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
+
+	use 'glepnir/dashboard-nvim' -- funny dashboard
+
 	-- auto-install
 	if packer_bootstrap then
 		require('packer').sync()

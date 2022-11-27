@@ -7,6 +7,9 @@ vim.o.relativenumber = true
 vim.o.termguicolors = true
 vim.o.syntax = true
 
+-- Leader
+vim.g.mapleader = ' '
+
 -- Indents
 vim.o.smarttab = true
 vim.o.smartindent = true
